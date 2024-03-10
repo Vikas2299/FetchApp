@@ -76,8 +76,8 @@ public class MainActivity extends AppCompatActivity {
 
                 List<Integer> keys = new ArrayList<>(totalItems.keySet());
                 for (int key : keys) {
-                    TreeMap<Integer, String> itemList = totalItems.get(key);
-                    for (String item : itemList.values()) {
+                    TreeMap<Integer, String> itemMap = totalItems.get(key);
+                    for (String item : itemMap.values()) {
                         //Add colon to display the list in a readable format
                         items.add(key + ": " + item);
                     }
